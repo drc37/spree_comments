@@ -15,10 +15,11 @@ Gem::Specification.new do |s|
   s.require_path  = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_api'
-  s.add_dependency 'spree_backend'
-  s.add_dependency 'spree_core', '>= 2.0.1'
-  s.add_dependency 'acts_as_commentable', '3.0.1'
+  spree_version = '~> 2.3.0.beta'
+  s.add_dependency 'spree_api', spree_version
+  s.add_dependency 'spree_backend', spree_version
+  s.add_dependency 'spree_core', spree_version
+  s.add_dependency 'acts_as_commentable', '4.0.1'
   s.add_development_dependency 'rspec-rails'
 
 end
